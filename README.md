@@ -1,7 +1,7 @@
 # COVID-19_Data
-Aggregate data call from Johns Hopkins github repository.
+Updated aggregate data call from Johns Hopkins github repository.
 
-Data retrieved from: https://github.com/CSSEGISandData/COVID-19
+Most recent updated data retrieved from: https://github.com/CSSEGISandData/COVID-19
 
 Infection cases are cumulative by province/State. 
 
