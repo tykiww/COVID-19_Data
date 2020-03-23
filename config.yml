@@ -2,8 +2,8 @@ default:
   base_url: "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/"
   folder_url: "https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports"
   xml_tag: "//table[contains(@class, 'files js-navigation-container js-active-navigation-container ')]"
-  columns: ["Province/State","Country/Region", "Last Update","Confirmed","Deaths",'Recovered']
-  requirments: []
+  columns: ['Province/State', 'Country/Region', 'Last Update', 'Confirmed', 'Deaths', 'Recovered']
+  requirments: ['rvest', 'xml2', 'dplyr', 'readr']
 
 
 
