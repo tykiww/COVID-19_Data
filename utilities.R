@@ -2,14 +2,16 @@ library(modules)
 
 
 common = module({
+  
   require('rvest')
   require('xml2')
   require('dplyr')
   require('readr')
+  require('utils')
   
   requirement_check = function(libs) {
-    is_there = any(!(libs %in% rownames(installed.packages())))
-    to_get = libs[!(libs %in% rownames(installed.packages()))]
+    is_there = any(!(libs %in% rownames(utils::installed.packages())))
+    to_get = libs[!(libs %in% rownames(utils::installed.packages()))]
     
     if(is_there){
       sapply(to_get, function(x) install.packages(x))
