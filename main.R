@@ -9,6 +9,9 @@ source(utilities.R)
 
 main <- function(destination) {
   
+  # Check for package requirments
+  common$requirement_check(config$requirements)
+  
   # Retrieve Request
   raw = common$scraper(config$folder_url,
                        config$xml_tag)
