@@ -3,7 +3,7 @@ Most recent and updated aggregate data call from ![Johns Hopkins Center for Syst
 
 Infection cases are cumulative by province/State. 
 
-Data may either be retrieved by cloning or through an html call.
+Data may either be retrieved by cloning or through an html call, as shown below.
 
 ```{python}
 url = "https://raw.githubusercontent.com/tykiww/COVID-19_Data/master/manual.R"
