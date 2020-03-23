@@ -1,11 +1,20 @@
 library(modules)
 
 
-common <- module({
+common = module({
   require('rvest')
   require('xml2')
   require('dplyr')
   require('readr')
+  
+  requirement_check = function(libs) {
+    is_there = any(!(libs %in% rownames(installed.packages())))
+    to_get = libs[!(libs %in% rownames(installed.packages()))]
+    
+    if(is_there){
+      sapply(to_get, function(x) install.packages(x))
+    }
+  }
   
   scraper = function(folder_location,xml) {
     # can't use pipes ):
