@@ -8,4 +8,4 @@ url = "https://raw.githubusercontent.com/tykiww/COVID-19_Data/master/manual.R"
 source(url) # data returned as df
 ```
 
-Infection cases are cumulative by province/State. 
+Infection cases are cumulative by Province/State. 
