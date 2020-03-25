@@ -1,11 +1,12 @@
 
 
 # Initialize
-utilities = "https://raw.githubusercontent.com/tykiww/COVID-19_Data/master/utilities.R"
-configuration = "https://raw.githubusercontent.com/tykiww/COVID-19_Data/master/config.yml"
-download.file(url = configuration, destfile = "config.yml")
-config <- config::get(file="config.yml")
-source(utilities)
+configuration = "config.yml"
+utilities = "utilities.R"
+base = "https://raw.githubusercontent.com/tykiww/COVID-19_Data/master/"
+download.file(url = paste(base,configuration,sep = ""), destfile = configuration)
+config <- config::get(file=configuration)
+source(paste(base,utilities,sep=""))
 
 
 
